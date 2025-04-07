@@ -1,0 +1,174 @@
+:root{
+    --background-color-main:hsl(40, 20%, 95%);
+    --border-color: hsl(0, 0%, 85%);
+    --text-color:hsl(220, 15%, 20%);
+    --anchor-color:hsl(210, 2%, 78%);
+    --section-color:hsla(0, 0%, 60%, 0.31);   
+}
+
+
+*{
+    margin:0;
+    padding:0;
+  }
+  #navbar{
+    position:fixed;
+    min-width:280px;
+    height:100%;
+    border-right:solid var(--border-color);
+    width:300px;
+  }
+  #navbar li{
+    padding:25px;
+    border-top:1px solid black;
+  text-align:center;
+  font-size:25px;
+  color:var(--text-color);
+  background-color: var(--background-color-main);
+  }
+  #navbar a {
+    padding:15px;
+  }
+  #navbar li:last-of-type{
+    border-bottom: 1px solid;
+  }
+  #navbar ul {
+      height: 88%;
+      padding: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
+  #arduino{
+    float:right;
+    margin-left:15px;
+    max-width:200px;
+  }
+  #raspberry{
+    float:left;
+    margin-right:15px;
+    max-width:200px;
+  }
+  #clion{
+    float:right;
+    margin-left:15px;
+    max-width:400px;
+  }
+  .cod{
+border-radius:0;
+padding: 2px;
+  }
+  main{
+    position: absolute;
+    margin-left:310px;
+    text-align:justify;
+    color:var(--text-color);
+    font-family:"Jost";
+    font-size:15px;
+  }
+  html{
+    background-color: var(--background-color-main);
+  }
+  section{
+    margin:10px;
+    background-color:var(--section-color);
+    padding:10px;
+    border-radius:10px;
+    box-shadow: 1px 1px 4px black;
+  }
+  #doc{
+    font-size:33px;
+    text-align:center;
+    font-family: "Bebas Neue";
+    text-shadow:1px 1px 2px black ;
+  }
+  .titre{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+    border-bottom:solid;
+    border-color:rgba(0,0,0,0.3);
+    font-family:"Roboto Mono";
+    text-shadow: 1px 1px 2px black;
+  }
+  p{
+    margin:10px 10px;
+  }
+  main li{
+    margin:10px 10px;
+  }
+  h2{
+    font-size:18px;
+  }
+  
+  code{
+    margin:5px;
+    padding:4px 4px;
+    background-color:rgba(128,128,128,0.3);
+    border-radius: 10px;
+  }
+  .nav-link{
+    text-decoration:none;
+    color:var(--text-color);
+    padding:10px;
+    font-family: "Roboto Mono";
+    font-weight:bold;
+    
+  }
+  .nav-link:hover{
+    transition: 1s;
+  color: black;
+  }
+  .liens{
+    text-decoration: underline;
+    color:var(--text-color);
+  }
+  .liens:hover{
+    color:grey;
+    transition: 1s;
+  }
+  header{
+    margin-top:15px;
+  }
+  @media only screen and (max-width: 815px) {
+    #navbar ul{
+      border: 3px solid;
+      height: 250px;
+      border-radius: 10px;
+
+    }
+  #navbar li{
+    border-top:1px solid;
+    text-align: center;
+  }
+  #navbar li:first-of-type{
+    border-top: none;
+  }
+  #navbar li:last-of-type{
+    border-bottom:none ;
+  }
+    #navbar {
+      background-color:var(--background-color-main);
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin:auto;
+      width: 100%;
+      max-height: 275px;
+      border: transparent;
+      display:flex;
+      align-items: center;
+        flex-direction: column;
+    }
+  
+    #main-doc {
+      margin-left: 10px;
+      margin-top: 290px;
+    }
+    code{
+      padding:2px;
+    }
+    #clion{
+      max-width:200px;
+    }
+  }
+  
