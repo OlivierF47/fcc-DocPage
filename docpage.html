@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>C DocPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon"  href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <nav id="navbar">
+    <header id="doc">Documentation du C</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Premier_pas_avec_le_c">Premier pas avec le C</a></li>
+      <li><a class="nav-link" href="#HelloWorld">HelloWorld</a></li>
+      <li><a class="nav-link" href="#Fonctions">Fonctions</a></li>
+      <li><a class="nav-link" href="#Utilisations">Utilisations</a></li>
+      <li><a class="nav-link" href="#Outils">Outils</a></li>
+      
+    </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header class="titre">Introduction</header>
+        <p>Le langage C est l'un des langages de programmation les plus influents et les plus utilisés dans le développement logiciel. Créé en 1972 par Dennis Ritchie au sein des laboratoires Bell, il a été conçu pour le développement du système d'exploitation UNIX. Sa simplicité, sa puissance et sa flexibilité en ont fait un langage incontournable, servant de base à de nombreux autres langages modernes comme C++, Java et Python.</p>
+        <h1 class="titre">Pourquoi apprendre le c ?</h1>
+        <ul>
+          <li>Une gestion fine de la mémoire et des ressources système.</li>
+          <li>Une exécution rapide, ce qui le rend idéal pour les systèmes embarqués et les applications critiques.</li>
+          <li>Une grande portabilité grâce à sa standardisation (ANSI C, ISO C).</li>
+          <li>Une utilisation dans de nombreux domaines&nbsp;: systèmes d'exploitation, jeux vidéo, logiciels embarqués, etc.</li>
+          </ul>
+      </section>
+       <section class="main-section" id="Premier_pas_avec_le_c">
+        <header class="titre">Premier pas avec le C</header>
+        <p>Un programme en C commence toujours par une fonction principale, appelée<code> main()</code>. C’est le point d’entrée du programme, où l'exécution commence. En C, chaque programme doit obligatoirement avoir une fonction main, qui peut être définie de cette manière&nbsp;:<br><code class="cod">int main() {<br>
+    // Code à exécuter<br>
+    return 0;<br>
+}
+</code></p>
+        <p>Une fois que vous avez écrit votre code, il est temps de le compiler et de l’exécuter. La compilation transforme le code source écrit en C en un fichier exécutable que votre ordinateur peut comprendre.</p>
+        <p>Compilation sous Windows (avec MinGW) :</p><ol>
+          <li>
+Ouvrez l'invite de commande.</li>
+
+<li>Naviguez vers le dossier contenant votre fichier source.</li>
+
+<li>Tapez la commande suivante pour compiler :</li>
+<code>gcc hello.c -o hello.exe</code><li>Pour exécuter le programme (HelloWorld dans ce cas de figure) tapez :<code>hello.exe
+
+</code>
+      </section>
+      <section class="main-section" id="HelloWorld">
+        <header class="titre">HelloWorld</header>
+        <p>Voici un programme simple en C qui affiche "&nbsp;Hello, World!&nbsp;" à l'écran :</p>
+        <code class="cod">#include &ltstdio.&gt<br>
+
+int main() {<br>
+    printf("Hello, World!\n");<br>
+    return 0;<br>
+}</code>
+        <ol>
+          <li><code>#include &ltstdio.h&gt</code> : Inclut la bibliothèque standard d'entrée/sortie, nécessaire pour utiliser <code>printf()</code></li>
+          <li><code>int main()</code> : Déclare la fonction principale du programme, point d'entrée de l'exécution.</li>
+          <li><code>printf("Hello, World!\n");</code> : Affiche le texte "&nbsp;Hello, World!&nbsp;" suivi d'un retour à la ligne<code> (\n)</code>.</li>
+          <li><code>return 0;</code> : Indique que le programme s'est terminé avec succès.</li>
+          </ol>
+      </section>
+     
+      <section class="main-section" id="Fonctions">
+        <header class="titre">Fonctions</header>
+        <p><strong>Fonctions avec valeur de retour.</strong></p> <p>Ce sont des fonctions qui retournent une valeur après avoir effectué un traitement. Le type de retour est défini dans la déclaration de la fonction.</p><p><strong>Fonctions sans valeur de retour (void)</strong></p>
+        <p>Ces fonctions ne retournent aucune valeur. Leur type de retour est <code>void</code>. Elles sont souvent utilisées pour effectuer des actions sans nécessité de renvoyer un résultat.</p>
+        <p><strong>Fonctions d’entrée/sortie</strong></p><p>Ces fonctions permettent d’afficher du texte à l’écran, de lire des entrées clavier ou de manipuler des fichiers. Elles sont essentielles pour interagir avec l’utilisateur et gérer les flux de données.</p>
+        <p><strong> Fonctions de gestion de la mémoire</strong></p><p>Elles servent à allouer, réallouer et libérer de la mémoire dynamiquement. Ces fonctions sont indispensables pour optimiser l'utilisation des ressources et éviter les fuites de mémoire.</p>
+        <p>Il existe enormément de déclinaison de fonctions qui ont chacune leurs utilité.</p>
+      </section>
+      <section class="main-section" id="Utilisations">
+        <header class="titre">Utilisations</header>
+        <p>Le langage C est largement utilisé dans divers domaines en raison de sa rapidité et de son efficacité. Il est notamment employé dans le développement de systèmes d’exploitation, comme Windows, Linux et macOS, car il permet un contrôle bas niveau du matériel et de la mémoire. On le retrouve également dans le développement de logiciels et d’applications, notamment dans les navigateurs web comme Google Chrome et Firefox, où ses performances élevées sont essentielles.</p>
+        <p>Le C est aussi très présent dans le développement embarqué, que ce soit pour des microcontrôleurs ou des systèmes embarqués dans l’automobile, grâce à sa légèreté et son efficacité sur des systèmes avec peu de ressources. Il est aussi utilisé pour la gestion des bases de données, comme MySQL, afin d'optimiser la rapidité d’exécution et la gestion des requêtes.</p>
+        <p>Dans l’univers du jeu vidéo, on retrouve le C dans des moteurs comme Unreal Engine, car il permet des calculs rapides et une gestion fine de la mémoire. Il est également incontournable en sécurité informatique, notamment dans des bibliothèques comme OpenSSL, qui assurent le chiffrement des communications HTTPS.</p>
+        <p>En plus de ces usages, le C est employé pour développer des outils système et utilitaires sous Linux et UNIX, comme les commandes ls, grep ou cat, car il s’intègre parfaitement aux systèmes d’exploitation. Enfin, on le retrouve dans l’intelligence artificielle et le traitement de données, où il améliore les performances de bibliothèques comme TensorFlow grâce à son efficacité dans les calculs complexes.</p>
+        
+      </section>
+      <section class="main-section" id="Outils">
+        <header class="titre">Les outils de programmation</header>
+        <h2><a class="liens" href="https://www.arduino.cc/" target="_blank">Arduino</a> (Débutants)</h2>
+        <img id="arduino" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/330px-Arduino_Uno_-_R3.jpg" alt="Photo d'une arduino">
+        <p>L'IDE Arduino est conçu pour être facile à prendre en main. Il cache la complexité des configurations bas niveau et permet de se concentrer sur l'essentiel : écrire du code et observer les résultats rapidement.</p>
+        <p>Même si Arduino utilise du C++, il évite les concepts avancés comme la gestion de la mémoire dynamique ou la programmation orientée objet complexe. On commence avec des fonctions simples comme <code>setup()</code> et <code>loop()</code>, ce qui est plus accessible aux débutants.</p>
+        <p>Contrairement aux langages haut niveau qui restent abstraits, Arduino permet de voir immédiatement l'effet du code sur du matériel : allumer une LED, lire un capteur, faire tourner un moteur... Cela rend l'apprentissage plus concret et motivant.</p>
+        <p>Il existe énormément de tutoriels, forums, et exemples de code pour Arduino, ce qui facilite l'apprentissage. Si tu bloques, il y a toujours quelqu'un qui a déjà rencontré (et résolu) le même problème que toi.</p>
+        <p>Une fois les bases acquises, on peut aller plus loin avec des projets avancés (robotique, domotique, objets connectés, etc.) et même explorer le C++ plus en profondeur.</p>
+        <p> En résumé, Arduino est un excellent moyen d'apprendre le C/C++ de façon pratique, progressive et motivante, sans être submergé par des concepts trop complexes dès le départ.</p>
+        <h2><a class="liens" href="https://www.raspberrypi.com/" target="_blank">Raspberry Pi</a> (Intermédiaire)</h2>
+        <img src="https://m.media-amazon.com/images/I/81x37vNZyVL._AC_UF1000,1000_QL80_.jpg" alt="Photo d'une RaspberryPi" id="raspberry" target="_blank">
+        <p>La Raspberry Pi est un nano-ordinateur monocarte conçu pour être abordable et polyvalent. Il permet d'apprendre la programmation, de faire de l'électronique embarquée et même d'héberger des serveurs. Contrairement à l’Arduino (qui est un microcontrôleur), la Raspberry Pi est un véritable ordinateur avec un système d’exploitation (Linux en général)</p>
+        <p>La Raspberry Pi offre un environnement Linux complet, ce qui permet d’écrire, compiler et exécuter du code en C directement via GCC. Elle donne accès aux ports GPIO (comme Arduino) pour contrôler des LED, moteurs ou capteurs, tout en permettant d'explorer la programmation système : gestion des processus, des threads et des sockets réseau. C’est un excellent choix pour passer du C embarqué au C utilisé dans des systèmes plus avancés.</p>
+        <p>La Raspberry Pi permet de réaliser des projets avancés comme un serveur web en C, une station météo connectée, ou un robot autonome. Contrairement à l’Arduino, qui est limité à des tâches simples, la Raspberry Pi permet d'exécuter plusieurs programmes simultanément, d'utiliser des bases de données, ou encore de gérer la mémoire et les fichiers comme sur un ordinateur classique.</p>
+        <h2><a class="liens" href="http://jetbrains.com/fr-fr/clion/" target="_blank">Clion</a> (Pro)</h2>
+        <img alt="Interface Clion" src="https://www.jetbrains.com/lp/clion-debugging/static/66b40eb0d41cdce855fcd693d7936e93/99238/screen-feature-1.webp" id="clion">
+        <p>Si tu veux un environnement de développement professionnel pour coder en C, CLion (JetBrains) est un excellent choix. C’est un IDE puissant qui offre une analyse avancée du code, un débogage performant et une intégration native avec CMake, un outil largement utilisé dans l’industrie pour gérer les projets C et C++.</p>
+        <p>CLion dispose d’une analyse statique et dynamique du code, ce qui permet de détecter les erreurs avant même la compilation. Il propose des suggestions intelligentes pour optimiser le code, corriger les fautes courantes et appliquer les bonnes pratiques. Grâce à son moteur de complétion avancé, il facilite l’écriture de code propre et efficace, même dans les projets complexes.</p>
+        <p>L’un des plus grands atouts de CLion est son débogueur intégré, compatible avec GDB et LLDB, qui sont les standards de l’industrie. Il permet d’exécuter le programme pas à pas, de poser des points d’arrêt conditionnels et d’inspecter la mémoire et les variables en temps réel. Ce niveau de contrôle est essentiel pour les développeurs travaillant sur des systèmes embarqués, des pilotes ou des applications critiques où le moindre bug peut avoir de lourdes conséquences.</p>
+        <p>CLion utilise CMake comme système de construction principal, un outil standard dans le développement C/C++ qui facilite la gestion des dépendances et des configurations multi-plateformes. Il est également compatible avec Makefiles, Ninja et d’autres systèmes de build, permettant aux développeurs d’intégrer facilement CLion dans leurs workflows existants.</p>
+        <p>En conclusion CLion est un IDE puissant, professionnel et conçu pour optimiser le développement en C/C++. Il offre une analyse avancée du code, un débogage performant et une intégration transparente avec CMake et d’autres outils de l’industrie. C’est un excellent choix pour les développeurs travaillant sur des projets complexes nécessitant performance, fiabilité et productivité. </p>
+      </section>
+    </main>
+  </body>
+</html>
